@@ -26,12 +26,16 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-group :development, :test do
+group :development do
   gem 'rspec-rails'
   gem 'pry', '~> 0.9'
   gem 'pry-rails'
   gem 'rb-fsevent', :require => false if RUBY_PLATFORM =~ /darwin/i
   gem 'guard-rspec'
+end
+
+group :test do
+  gem 'rspec-rails'
 end
 
 gem 'jquery-rails'
