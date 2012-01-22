@@ -1,0 +1,1 @@
+This is a Ruby on Rails application by [Jeffrey Jurgajtis](http://creativitycoded.com/).
