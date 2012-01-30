@@ -15,6 +15,10 @@ class Teacher < ActiveRecord::Base
                        
   before_save :encrypt_password
   
+  def has_password?(submitted_password)
+    # Compare encrypt_password with the encrypted version of submitted password.
+  end
+  
   private
   
     def encrypt_password
@@ -22,7 +26,7 @@ class Teacher < ActiveRecord::Base
     end
     
     def encrypt(string)
-      string # Left off on 7.2
+      string # Left off on 7.2.3 - Implementing has_password?
     end
   
 end
