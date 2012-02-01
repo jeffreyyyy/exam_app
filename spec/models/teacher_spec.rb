@@ -106,8 +106,24 @@ describe Teacher do
     
     end
     
+    describe "authenticate method" do
+      
+      it "should return nil on email/password mismatch" do
+        wrong_password_teacher = Teacher.authenticate(@attr[:email], "wrongpass")
+        wrong_password_teacher.should be_nil
+      end
+      
+      it "should return nil for an email address with no user" do
+        nonexistent_teacher = Teacher.authenticate("bar@foo.com", @attr[:password])
+        nonexistent_teacher.should be_nil
+      end
+      
+      it "should return the user on email/password match" do
+        matching_teacher = Teacher.authenticate(@attr[:email], @attr[:password])
+        matching_teacher.should == @teacher
+      end
+    end
   end
-  
 end
 
 
