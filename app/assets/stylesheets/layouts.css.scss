@@ -1,0 +1,41 @@
+body {
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+}
+h1 {
+	font-size: 45px;
+	font-family: Georgia, serif;
+	letter-spacing: -3px;
+	margin-bottom: 6px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid black;
+}
+/* Nav Styles not in use */
+nav {
+  background-color: white;
+  padding: 0 0;
+  white-space: nowrap;
+	float: right;
+	ul {
+		margin: 0;
+	  padding: 0;
+		li {
+			list-style-type: none;
+		  display: inline-block;
+		  padding: 0.2em 0;
+			a {
+				padding: 10px 10px;
+			  text-decoration: none;
+				font-size: 20px;
+				color: #000;
+			}
+			a:visited {
+				color: #000;
+			}
+			a:hover {
+				color: red;
+			}
+		}
+	}
+}
