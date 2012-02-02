@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe Teacher do
-  
+    
   before(:each) do
     @attr = { :name => "Luke Skywalker", 
               :email => "luke@jediacademy.com",

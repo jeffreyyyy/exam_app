@@ -1,6 +1,7 @@
 require 'spec_helper'
 
 describe TeachersController do
+
   
   describe "GET 'new'" do
     it "should be successful" do
