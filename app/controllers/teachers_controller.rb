@@ -15,6 +15,13 @@ class TeachersController < ApplicationController
   end
   
   def create
+    @teacher = Teacher.new(params[:teacher])
+    if @teacher.save
+      flash[:success] = "Welcome to the ExamApp!"
+      redirect_to @teacher
+    else
+      render 'new'
+    end
   end
   
   def update

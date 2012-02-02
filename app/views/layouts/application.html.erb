@@ -7,8 +7,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<%= render 'layouts/header' %>	
+<%= render 'layouts/header' %>
+<% flash.each do |key, value| %>
+	<div class="flash <%= key %>"><%= value %></div>
+<% end %>	
 <%= yield %>
+<h4>Left off on section 8.3.4</h4>
 
 </body>
 </html>
