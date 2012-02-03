@@ -1,0 +1,20 @@
+require 'spec_helper'
+
+describe "Teachers" do
+  describe "signup" do
+    describe "failure" do
+      # it "should not make a new teacher" do
+      #   lambda do
+      #     get signup_path
+      #     fill_in "Name",         :with => ''
+      #     fill_in "Email",        :with => ''
+      #     fill_in "Password",     :with => ''
+      #     fill_in "Confirmation", :with => ''
+      #     click_button
+      #     response.should render_template('teachers/new')
+      #     response.should have_selector('div#error_explanation')
+      #   end.should_not change(Teacher, :count)
+      # end
+    end
+  end
+end
