@@ -30,7 +30,7 @@ group :development do
   gem 'rspec-rails'
   gem 'pry', '~> 0.9'
   gem 'pry-rails'
-  gem 'rb-fsevent', :require => false if RUBY_PLATFORM =~ /darwin/i
+  gem 'rb-fsevent'
   gem 'guard-rspec'
 end
 
