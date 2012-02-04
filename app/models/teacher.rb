@@ -26,6 +26,11 @@ class Teacher < ActiveRecord::Base
     return user if user.has_password?(submitted_password)
   end
   
+  def self.authenticatea_with_salt(id, cookie_salt)
+    teacher = find_by_id(id)
+    (teacher && teacher.salt == cookie_salt) ? teacher : nil
+  end
+  
   private
   
     def encrypt_password

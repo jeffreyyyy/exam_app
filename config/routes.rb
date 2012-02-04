@@ -1,10 +1,12 @@
 ExamApp::Application.routes.draw do
-  
-  get "sessions/new"
 
   resources :teachers
+  resources :sessions, :only => [:new, :create, :destroy]
   
-  match '/signup', :to => 'teachers#new'
+  match '/signup',  :to => 'teachers#new'
+  match '/signin',  :to => 'sessions#new'
+  match '/signout', :to => 'sessions#destroy'
+
   # root :to => 'welcome#index'
 
 end
