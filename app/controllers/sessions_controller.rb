@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
       render 'new'
     else
       sign_in teacher
-      redirect_to teacher
+      redirect_back_or teacher
     end
   end
   
