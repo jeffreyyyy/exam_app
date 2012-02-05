@@ -107,3 +107,18 @@ REQUESTING PAGE: POST /teachers with {"utf8"=>"✓", "teacher"=>{"name"=>"", "em
 REQUESTING PAGE: GET /signup with {} and HTTP headers {}
 REQUESTING PAGE: POST /teachers with {"utf8"=>"✓", "teacher"=>{"name"=>"Jeffrey", "email"=>"Jeffrey@example.com", "password"=>"Jeffrey", "password_confirmation"=>"Jeffrey"}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
 REQUESTING PAGE: GET http://www.example.com/teachers/1 with {} and HTTP headers {"HTTP_REFERER"=>"/teachers"}
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+REQUESTING PAGE: POST /teachers with {"utf8"=>"✓", "teacher"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+REQUESTING PAGE: POST /teachers with {"utf8"=>"✓", "teacher"=>{"name"=>"Jeffrey", "email"=>"Jeffrey@example.com", "password"=>"Jeffrey", "password_confirmation"=>"Jeffrey"}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+REQUESTING PAGE: GET http://www.example.com/teachers/1 with {} and HTTP headers {"HTTP_REFERER"=>"/teachers"}
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+REQUESTING PAGE: POST /teachers with {"utf8"=>"✓", "teacher"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+REQUESTING PAGE: POST /teachers with {"utf8"=>"✓", "teacher"=>{"name"=>"Jeffrey", "email"=>"Jeffrey@example.com", "password"=>"Jeffrey", "password_confirmation"=>"Jeffrey"}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+REQUESTING PAGE: GET http://www.example.com/teachers/1 with {} and HTTP headers {"HTTP_REFERER"=>"/teachers"}
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+REQUESTING PAGE: POST /teachers with {"utf8"=>"✓", "teacher"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+REQUESTING PAGE: POST /teachers with {"utf8"=>"✓", "teacher"=>{"name"=>"Jeffrey", "email"=>"Jeffrey@example.com", "password"=>"Jeffrey", "password_confirmation"=>"Jeffrey"}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+REQUESTING PAGE: GET http://www.example.com/teachers/1 with {} and HTTP headers {"HTTP_REFERER"=>"/teachers"}

@@ -2,15 +2,62 @@ body {
 	width: 960px;
 	margin-right: auto;
 	margin-left: auto;
+	background-color: #ad4f52;
 }
 h1 {
-	font-size: 45px;
-	font-family: Georgia, serif;
+	color: #FFF;
+	font-size: 55px;
+	font-family: Times, serif;
 	letter-spacing: -3px;
 	margin-bottom: 6px;
 	padding-bottom: 30px;
-	border-bottom: 1px solid black;
+	text-align: center;
 }
+p, a, label {
+	color: #FFF;
+	font-family: serif;
+	font-size: 23px;
+	font-weight: 500;
+}
+h2, h3, h4 {
+	color: #FFF;
+}
+.field {
+	input {
+		background-color: #e1e1e1;
+		border-radius: 4px;
+	  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+		width: 250px;
+		height: 30px;
+		background-color: #ededed;
+	  background-image: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ffffff)); /* Saf4+, Chrome */
+	  background-image: -webkit-linear-gradient(top, #ededed, #ffffff); /* Chrome 10+, Saf5.1+, iOS 5+ */
+	  background-image:         linear-gradient(to bottom, #ededed, #ffffff);
+		margin: 3px 0px 3px 0px;
+		font-size: 17px;
+		border: 1px solid #333;
+	}
+}
+.actions {
+	input[type=submit] {
+		background-color: #e1e1e1;
+		border-radius: 4px;
+		width: 120px;
+		height: 30px;
+		background-color: #ededed;
+	  background-image: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ffffff)); /* Saf4+, Chrome */
+	  background-image: -webkit-linear-gradient(top, #ededed, #ffffff); /* Chrome 10+, Saf5.1+, iOS 5+ */
+	  background-image:         linear-gradient(to bottom, #ededed, #ffffff);
+		margin-top: 12px;
+		font-size: 17px;
+		font-weight: bold;
+		font-family: Times, serif;
+		color : #597a8c;
+		border: 1px solid #333;
+	}
+}
+
+
 /* Nav Styles not in use */
 nav {
   background-color: white;
@@ -39,43 +86,9 @@ nav {
 		}
 	}
 }
-/* Styles for errors partial */
-/*.field_with_errors {
-  margin-top: 0px;
-  padding: 0px;
-  background-color: red;
-  display: table;
-}
 
-.field_with_errors label {
-  color: #fff;
-}*/
-#error_explanation {
-  width: 600px;
-  border: 2px solid black;
-  padding: 7px;
-  padding-bottom: 12px;
-  margin-bottom: 20px;
-  background-color: #f0f0f0;
-}
 
-#error_explanation h2 {
-  text-align: left;
-  font-weight: bold;
-  padding: 5px 5px 5px 15px;
-  font-size: 12px;
-  margin: -7px;
-  background-color: black;
-  color: #fff;
-}
 
-#error_explanation p {
-  color: #333;
-  margin-bottom: 0;
-  padding: 5px;
-}
 
-#error_explanation ul li {
-  font-size: 12px;
-  list-style: square;
-}
+
+
