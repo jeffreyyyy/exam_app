@@ -60,28 +60,41 @@ h2, h3, h4 {
 
 /* Nav Styles not in use */
 nav {
-  background-color: white;
-  padding: 0 0;
-  white-space: nowrap;
-	float: right;
+	margin-bottom: 25px;
+  padding: 13px 0px;
+	width: 960px;
+	background-color: #974040;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#974040), to(#7B3939)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #974040, #7B3939); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient(top, #974040, #7B3939); /* FF3.6 */
+  background-image:     -ms-linear-gradient(top, #974040, #7B3939); /* IE10 */
+  background-image:      -o-linear-gradient(top, #974040, #7B3939); /* Opera 11.10+ */
+  background-image:         linear-gradient(to bottom, #974040, #7B3939);
 	ul {
-		margin: 0;
-	  padding: 0;
+		margin: 0px;
+	  padding: 0px;
 		li {
 			list-style-type: none;
 		  display: inline-block;
-		  padding: 0.2em 0;
+		  padding: 0;
 			a {
-				padding: 10px 10px;
+				padding-top: 15px;
+			 	padding-bottom: 16px;
+				padding-right: 30px;
+				padding-left: 30px;
 			  text-decoration: none;
-				font-size: 20px;
-				color: #000;
+				color: #FFF;
+				font: normal 15px/23px Arial, sans-serif;
+				-webkit-transition: all .35s linear;
+				transition: all .35s linear;
 			}
 			a:visited {
-				color: #000;
+				color: #FFF;
 			}
 			a:hover {
-				color: red;
+				color: #FFF;
+				background-color: #974040;
+				
 			}
 		}
 	}
