@@ -1,26 +1,27 @@
-body {
+.container {
 	width: 960px;
 	margin-right: auto;
 	margin-left: auto;
-	background-color: #ad4f52;
+	background-color: #FFF;
 }
 h1 {
-	color: #FFF;
-	font-size: 55px;
-	font-family: Times, serif;
-	letter-spacing: -3px;
+	color: #7ADEFF;
+	margin-top: -12px;
+	font-size: 20px;
+	font-family: Tahoma, Geneva, sans-serif;
 	margin-bottom: 6px;
 	padding-bottom: 30px;
-	text-align: center;
+	text-align: left;
+	font-weight: bold;
 }
 p, a, label {
-	color: #FFF;
+	color: #000;
 	font-family: serif;
 	font-size: 23px;
 	font-weight: 500;
 }
 h2, h3, h4 {
-	color: #FFF;
+	color: #000;
 }
 .field {
 	input {
@@ -30,9 +31,9 @@ h2, h3, h4 {
 		width: 250px;
 		height: 30px;
 		background-color: #ededed;
-	  background-image: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ffffff)); /* Saf4+, Chrome */
-	  background-image: -webkit-linear-gradient(top, #ededed, #ffffff); /* Chrome 10+, Saf5.1+, iOS 5+ */
-	  background-image:         linear-gradient(to bottom, #ededed, #ffffff);
+	  background-image: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ffffff)); 
+	  background-image: -webkit-linear-gradient(top, #ededed, #ffffff); 
+	  background-image: linear-gradient(to bottom, #ededed, #ffffff);
 		margin: 3px 0px 3px 0px;
 		font-size: 17px;
 		border: 1px solid #333;
@@ -45,9 +46,9 @@ h2, h3, h4 {
 		width: 120px;
 		height: 30px;
 		background-color: #ededed;
-	  background-image: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ffffff)); /* Saf4+, Chrome */
-	  background-image: -webkit-linear-gradient(top, #ededed, #ffffff); /* Chrome 10+, Saf5.1+, iOS 5+ */
-	  background-image:         linear-gradient(to bottom, #ededed, #ffffff);
+	  background-image: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ffffff)); 
+	  background-image: -webkit-linear-gradient(top, #ededed, #ffffff); 
+	  background-image: linear-gradient(to bottom, #ededed, #ffffff);
 		margin-top: 12px;
 		font-size: 17px;
 		font-weight: bold;
@@ -57,51 +58,52 @@ h2, h3, h4 {
 	}
 }
 
-
-/* Nav Styles not in use */
-nav {
-	margin-bottom: 25px;
-  padding: 13px 0px;
+div.navbar {
+	width: auto;
+	margin: -8px -8px 10px -10px; 
+	height: 40px;
+	box-shadow: 0px 2px 2px #1d1d1d;
+	background-color: #1d1d1d;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3d3d3d), to(#1d1d1d)); 
+  background-image: -webkit-linear-gradient(top, #3d3d3d, #1d1d1d); 
+  background-image: linear-gradient(to bottom, #3d3d3d, #1d1d1d);
+}
+header {
 	width: 960px;
-	background-color: #974040;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#974040), to(#7B3939)); /* Saf4+, Chrome */
-  background-image: -webkit-linear-gradient(top, #974040, #7B3939); /* Chrome 10+, Saf5.1+, iOS 5+ */
-  background-image:    -moz-linear-gradient(top, #974040, #7B3939); /* FF3.6 */
-  background-image:     -ms-linear-gradient(top, #974040, #7B3939); /* IE10 */
-  background-image:      -o-linear-gradient(top, #974040, #7B3939); /* Opera 11.10+ */
-  background-image:         linear-gradient(to bottom, #974040, #7B3939);
+	margin: -50px auto 40px auto; 
+	height: 40px;
+	background-color: transparent;
+}
+nav {
+	margin-bottom: 0px;
+  padding: 10px 0px;
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
 	ul {
 		margin: 0px;
 	  padding: 0px;
+		float: right;
 		li {
 			list-style-type: none;
 		  display: inline-block;
 		  padding: 0;
 			a {
-				padding-top: 15px;
-			 	padding-bottom: 16px;
+				padding-top: 10px;
+			 	padding-bottom: 10px;
 				padding-right: 30px;
 				padding-left: 30px;
 			  text-decoration: none;
-				color: #FFF;
-				font: normal 15px/23px Arial, sans-serif;
-				-webkit-transition: all .35s linear;
-				transition: all .35s linear;
-			}
-			a:visited {
-				color: #FFF;
+				color: #BABABA;
+				font: normal 11px/23px Arial, sans-serif;
+				-webkit-transition: color .5s linear;
+				-moz-transition: color .5s linear;
+				-o-transition: color .5s linear;
+				transition: color .5s linear;
 			}
 			a:hover {
-				color: #FFF;
-				background-color: #974040;
-				
+				color: #FFF;				
 			}
 		}
 	}
 }
-
-
-
-
-
-
