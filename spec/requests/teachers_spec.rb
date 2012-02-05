@@ -30,4 +30,27 @@ describe "Teachers" do
       end
     end
   end
+  describe "sign in/out" do
+    describe "failure" do
+      it "should not sign a teacher in" do
+        visit signin_path
+        fill_in :email,    :with => ""
+        fill_in :password, :with => ""
+        click_button
+        controller.should_not be_signed_in
+      end
+    end
+    describe "success" do
+      it "should sign the teacher in and out" do
+        teacher = Factory(:teacher)
+        visit signin_path
+        fill_in :email, :with => teacher.email
+        fill_in :password, :with => teacher.password
+        click_button
+        controller.should be_signed_in
+        click_link "Sign Out"
+        controller.should_not be_signed_in
+      end
+    end
+  end
 end
