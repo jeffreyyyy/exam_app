@@ -61,6 +61,11 @@ describe TeachersController do
         post :create, :teacher => @attr
         response.should redirect_to(teacher_path(assigns(:teacher)))
       end
+      
+      it "should sign the teacher in" do
+        post :create, :teacher => @attr
+        controller.should be_signed_in
+      end
     end
   end
 end

@@ -17,6 +17,11 @@ module SessionsHelper
     !current_teacher.nil?
   end
   
+  def sign_out
+    cookies.delete(:remember_token)
+    self.current_teacher = nil
+  end
+  
   private
   
     def teacher_from_remember_token

@@ -21,12 +21,12 @@ class Teacher < ActiveRecord::Base
   end
   
   def self.authenticate(email, submitted_password)
-    user = find_by_email(email)
-    return nil  if user.nil?
-    return user if user.has_password?(submitted_password)
+    teacher = find_by_email(email)
+    return nil  if teacher.nil?
+    return teacher if teacher.has_password?(submitted_password)
   end
   
-  def self.authenticatea_with_salt(id, cookie_salt)
+  def self.authenticate_with_salt(id, cookie_salt)
     teacher = find_by_id(id)
     (teacher && teacher.salt == cookie_salt) ? teacher : nil
   end

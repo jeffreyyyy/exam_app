@@ -7,6 +7,6 @@ ExamApp::Application.routes.draw do
   match '/signin',  :to => 'sessions#new'
   match '/signout', :to => 'sessions#destroy'
 
-  # root :to => 'welcome#index'
+  root :to => 'sessions#new'
 
 end
