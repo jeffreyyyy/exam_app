@@ -14,7 +14,6 @@ class TeachersController < ApplicationController
   end
   
   def edit
-    @teacher = Teacher.find(params[:id]) # Can delete 
   end
   
   def create
@@ -29,13 +28,12 @@ class TeachersController < ApplicationController
   end
   
   def update
-    @teacher = Teacher.find(params[:id]) # Can delete
-      if @teacher.update_attributes(params[:teacher])
-        flash[:success] = "Profile Updated."
-        redirect_to @teacher
-      else
-        render 'edit'
-      end
+    if @teacher.update_attributes(params[:teacher])
+      flash[:success] = "Profile Updated."
+      redirect_to @teacher
+    else
+      render 'edit'
+    end
   end
   
   def destroy
