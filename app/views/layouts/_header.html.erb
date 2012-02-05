@@ -9,6 +9,7 @@
 			<% if signed_in? %>
 			<li><%= link_to "SIGN OUT", signout_path, :method => :delete %></li>
 			<li><%= link_to "PROFILE", current_teacher %></li>
+			<li><%= link_to "SETTINGS", edit_teacher_path(current_teacher) %></li>
 			<% else %>
 			<li><%= link_to "SIGN IN", signin_path %></li>
 			<li><%= link_to "REGISTER", signup_path %></li>

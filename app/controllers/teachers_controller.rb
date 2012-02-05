@@ -1,4 +1,6 @@
 class TeachersController < ApplicationController
+  before_filter :authenticate, :only => [:edit, :update]
+  before_filter :correct_teacher, :only => [:edit, :update]
 
   def index
   end
@@ -12,6 +14,7 @@ class TeachersController < ApplicationController
   end
   
   def edit
+    @teacher = Teacher.find(params[:id]) # Can delete 
   end
   
   def create
@@ -26,9 +29,26 @@ class TeachersController < ApplicationController
   end
   
   def update
+    @teacher = Teacher.find(params[:id]) # Can delete
+      if @teacher.update_attributes(params[:teacher])
+        flash[:success] = "Profile Updated."
+        redirect_to @teacher
+      else
+        render 'edit'
+      end
   end
   
   def destroy
   end
 
+  private
+  
+    def authenticate
+      deny_access unless signed_in?
+    end
+    
+    def correct_teacher
+      @teacher = Teacher.find(params[:id])
+      redirect_to(root_path) unless current_teacher?(@teacher)
+    end
 end
