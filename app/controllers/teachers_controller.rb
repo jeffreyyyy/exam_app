@@ -30,7 +30,7 @@ class TeachersController < ApplicationController
   def update
     if @teacher.update_attributes(params[:teacher])
       flash[:success] = "Your changes were successfully saved!"
-      redirect_to @teacher
+      redirect_to root_path
     else
       render 'edit'
     end
