@@ -1,4 +1,5 @@
 class SessionsController < ApplicationController
+  before_filter :signin_filter, :only => [:new]
   
   def new
   end
@@ -18,6 +19,10 @@ class SessionsController < ApplicationController
   def destroy
     sign_out
     redirect_to root_path
+  end
+  
+  def signin_filter
+    redirect_to teacher_path(current_teacher) if signed_in?
   end
   
 end
